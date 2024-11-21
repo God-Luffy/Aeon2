@@ -16,11 +16,11 @@ class _BotCommands:
         self.SearchCommand = f"search{i}"
         self.StatusCommand = [f"status{i}", "statusall"]
         self.UsersCommand = f"users{i}"
-        self.AuthorizeCommand = f"authorize{i}"
-        self.UnAuthorizeCommand = f"unauthorize{i}"
+        self.AuthorizeCommand = [f"authorize{i}, a{i}"]
+        self.UnAuthorizeCommand = [f"unauthorize{i}, un{i}"]
         self.AddSudoCommand = f"addsudo{i}"
         self.RmSudoCommand = f"rmsudo{i}"
-        self.PingCommand = "ping"
+        self.PingCommand = [f"ping{i}, p{i}"]
         self.RestartCommand = [f"restart{i}", "restartall"]
         self.StatsCommand = [f"stats{i}", "statsall"]
         self.HelpCommand = f"help{i}"
@@ -28,8 +28,8 @@ class _BotCommands:
         self.ShellCommand = f"shell{i}"
         self.EvalCommand = f"eval{i}"
         self.ExecCommand = f"exec{i}"
-        self.BotSetCommand = f"botsettings{i}"
-        self.UserSetCommand = f"settings{i}"
+        self.BotSetCommand = [f"botsettings{i}, bs{i}"]
+        self.UserSetCommand = [f"settings{i}, us{i}"]
         self.SpeedCommand = f"speedtest{i}"
         self.AddImageCommand = f"addimg{i}"
         self.ImagesCommand = f"images{i}"
